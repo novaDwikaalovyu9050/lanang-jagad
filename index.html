@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>List Harga Voucher</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      padding: 20px;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #222;
+    }
+
+    .provider {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+      gap: 12px 24px;
+      margin-top: 10px;
+    }
+
+    .voc {
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      padding: 12px 16px;
+      font-size: 15px;
+      transition: 0.3s;
+      color: #222;
+    }
+
+    .voc:hover {
+      filter: brightness(1.05);
+    }
+
+    .three .voc {
+      background: linear-gradient(to right, #c71585, #ffc0cb);
+      color: white;
+    }
+
+    .simpati .voc {
+      background: linear-gradient(to right, #8b0000, #ff6347);
+      color: white;
+    }
+
+    .axis .voc {
+      background: linear-gradient(to right, #800080, #ff69b4);
+      color: white;
+    }
+
+    .xl .voc {
+      background: linear-gradient(to right, #003366, #66ccff);
+      color: white;
+    }
+
+    .im3 .voc {
+      background: linear-gradient(to right, #ff8c00, #ffeb3b);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Three</h2>
+  <div class="provider three">
+    <div class="voc">2GB - 1 Hari = Rp6.000</div>
+    <div class="voc">3GB - 3 Hari = Rp12.000</div>
+    <div class="voc">6GB - 5 Hari = Rp22.000</div>
+    <div class="voc">10GB - 7 Hari = Rp26.000</div>
+    <div class="voc">2,5GB AON = Rp20.000</div>
+    <div class="voc">3,5GB AON = Rp24.000</div>
+    <div class="voc">6GB AON = Rp33.000</div>
+  </div>
+
+  <h2>Simpati</h2>
+  <div class="provider simpati">
+    <div class="voc">1,5GB - 3 Hari = Rp9.000</div>
+    <div class="voc">2,5GB - 5 Hari = Rp13.000</div>
+    <div class="voc">3,5GB - 5 Hari = Rp21.000</div>
+    <div class="voc">4,5GB - 5 Hari = Rp22.000</div>
+    <div class="voc">5,5GB - 5 Hari = Rp25.000</div>
+    <div class="voc">5GB - 30 Hari = Rp27.000</div>
+  </div>
+
+  <h2>Axis</h2>
+  <div class="provider axis">
+    <div class="voc">3GB - 3 Hari = Rp13.000</div>
+    <div class="voc">3GB - 5 Hari = Rp14.000</div>
+    <div class="voc">2GB - 30 Hari = Rp17.000</div>
+    <div class="voc">3,5GB - 30 Hari = Rp18.000</div>
+    <div class="voc">7GB - 7 Hari = Rp35.000</div>
+  </div>
+
+  <h2>XL</h2>
+  <div class="provider xl">
+    <div class="voc">3GB - 3 Hari = Rp12.000</div>
+    <div class="voc">3,5GB - 5 Hari = Rp19.000</div>
+    <div class="voc">5,5GB - 7 Hari = Rp22.000</div>
+  </div>
+
+  <h2>IM3</h2>
+  <div class="provider im3">
+    <div class="voc">1,5GB - 1 Hari = Rp6.000</div>
+    <div class="voc">2,5GB - ? Hari = Rp15.000</div>
+    <div class="voc">3,5GB - 5 Hari = Rp16.000</div>
+    <div class="voc">5GB - 5 Hari = Rp20.000</div>
+    <div class="voc">3GB - 30 Hari = Rp23.000</div>
+    <div class="voc">7GB - 7 Hari = Rp26.000</div>
+  </div>
+
+</body>
+</html>
